@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Jad Commande</title>
+    <meta
+      name="description"
+      content="Commandez depuis Sephora, Shein ou Cdiscount en un clic. Envoyez votre panier sur WhatsApp."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <div class="logo">Jad Commande</div>
+        <a class="cta-button" href="#commande">Commander maintenant</a>
+      </nav>
+      <div class="hero">
+        <div class="hero-text">
+          <h1>Commandez depuis Sephora, Shein, Cdiscount ou Temu en un clic</h1>
+          <p>
+            Copiez le lien de votre panier et envoyez votre demande. Nous nous
+            occupons du reste au Maroc.
+          </p>
+          <div class="brand-logos" aria-label="Plateformes disponibles">
+            <span class="brand-chip sephora">Sephora</span>
+            <span class="brand-chip shein">SHEIN</span>
+            <span class="brand-chip cdiscount">Cdiscount</span>
+            <span class="brand-chip temu">Temu</span>
+          </div>
+          <a class="cta-button" href="#commande">Commander maintenant</a>
+        </div>
+        <div class="hero-card">
+          <h2>Rapide et sans carte bancaire</h2>
+          <p>Service de commande personnalisée, réponse rapide sur WhatsApp.</p>
+          <ul class="hero-list">
+            <li>Livraison au Maroc</li>
+            <li>Paiement à la livraison</li>
+            <li>Accompagnement personnalisé</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section how" id="comment">
+        <h2>Comment ça marche ?</h2>
+        <div class="steps">
+          <article class="step">
+            <div class="step-icon">🛒</div>
+            <h3>Ajoutez vos produits</h3>
+            <p>Sur Sephora, Shein, Cdiscount ou Temu.</p>
+          </article>
+          <article class="step">
+            <div class="step-icon">🔗</div>
+            <h3>Copiez le lien du panier</h3>
+            <p>Collez le lien complet dans le formulaire.</p>
+          </article>
+          <article class="step">
+            <div class="step-icon">📲</div>
+            <h3>Envoyez sur WhatsApp</h3>
+            <p>Votre demande part directement au propriétaire.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section form-section" id="commande">
+        <div class="section-header">
+          <h2>Formulaire de commande</h2>
+          <p>
+            Remplissez les détails et envoyez automatiquement votre commande via
+            WhatsApp.
+          </p>
+        </div>
+        <form id="order-form" class="order-form">
+          <div class="field">
+            <label for="fullName">Nom complet *</label>
+            <input
+              id="fullName"
+              name="fullName"
+              type="text"
+              placeholder="Votre nom et prénom"
+              required
+            />
+          </div>
+          <div class="field">
+            <label for="whatsappNumber">Numéro WhatsApp *</label>
+            <input
+              id="whatsappNumber"
+              name="whatsappNumber"
+              type="tel"
+              placeholder="+212 6 00 00 00 00"
+              required
+            />
+          </div>
+          <div class="field">
+            <label for="platform">Plateforme *</label>
+            <select id="platform" name="platform" required>
+              <option value="">Choisir une plateforme</option>
+              <option value="Sephora">Sephora</option>
+              <option value="Shein">Shein</option>
+              <option value="Cdiscount">Cdiscount</option>
+              <option value="Temu">Temu</option>
+              <option value="Autre">Autre</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="promoCode">Code promo</label>
+            <input
+              id="promoCode"
+              name="promoCode"
+              type="text"
+              placeholder="PROMO50"
+              autocomplete="off"
+            />
+          </div>
+          <div class="field full">
+            <label for="cartLink">Lien du panier *</label>
+            <input
+              id="cartLink"
+              name="cartLink"
+              type="url"
+              placeholder="https://"
+              required
+            />
+          </div>
+          <div class="field full">
+            <label for="message">Message optionnel</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Taille, couleur, urgence, adresse..."
+            ></textarea>
+          </div>
+          <button class="cta-button full" type="submit">
+            🟢 Envoyer la commande via WhatsApp
+          </button>
+          <p class="form-note">
+            En cliquant, un message WhatsApp pré-rempli s’ouvrira.
+          </p>
+          <p class="form-note promo-note">
+            Code promo 50% pour les 5 premiers clients (dans la limite des
+            disponibilités).
+          </p>
+        </form>
+      </section>
+
+      <section class="section benefits" id="avantages">
+        <h2>Pourquoi passer par Jad Commande ?</h2>
+        <div class="benefit-list">
+          <div class="benefit-item">❌ Pas besoin de carte bancaire</div>
+          <div class="benefit-item">🚚 Livraison au Maroc</div>
+          <div class="benefit-item">🤝 Paiement à la livraison possible</div>
+          <div class="benefit-item">⚡ Réponse rapide sur WhatsApp</div>
+          <div class="benefit-item">💬 Accompagnement personnalisé</div>
+        </div>
+      </section>
+
+      <section class="section trust" id="confiance">
+        <h2>Confiance</h2>
+        <p>
+          Chaque commande est traitée manuellement pour éviter les erreurs.
+        </p>
+        <div class="trust-icons">
+          <span>💬 WhatsApp</span>
+          <span>🚚 Livraison</span>
+          <span>🔒 Sécurité</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>© 2026 Jad Commande</div>
+      <a
+        href="https://wa.me/212621924487"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        WhatsApp
+      </a>
+      <div>Service de commande personnalisée</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
